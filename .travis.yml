@@ -5,6 +5,12 @@ jdk:
   
 android:
   components:
+  
+  licenses:
+    - 'android-sdk-preview-license-.+'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
+    
     # Uncomment the lines below if you want to
     # use the latest revision of Android SDK Tools
     # - platform-tools
