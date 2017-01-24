@@ -1,5 +1,5 @@
 language: android
-jdk: oraclejdk8
+
 android:
         components:
                 - platform-tools
@@ -15,3 +15,4 @@ script:
 before_install:
         - chmod +x gradlew
 
+jdk: oraclejdk8
