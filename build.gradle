@@ -6,7 +6,6 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.2'
-        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.2.1"
         classpath 'org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.4.0'
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -17,7 +16,6 @@ buildscript {
 
 apply plugin: 'application'
 apply plugin: 'jacoco'
-apply plugin: 'org.sonarqube'
 apply plugin: 'com.github.kt3k.coveralls'
 
 allprojects {
@@ -37,10 +35,4 @@ jacocoTestReport {
     }
 }
 
-sonarqube {
-    properties {
-        //property "sonar.projectName", "PROJECT NAME"
-        //property "sonar.projectKey", "PROJECT KEY"
-        property "sonar.jacoco.reportPath", "${project.buildDir}/jacoco/test.exec"
-    }
-}
+
